@@ -1,0 +1,12 @@
+.footerContainer {
+    color: white;
+    background-color: rgb(37,37,37);
+    margin: 0;
+    padding: 60px 70px 40px;
+}
+
+.footerContent {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}

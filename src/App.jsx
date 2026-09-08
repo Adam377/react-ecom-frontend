@@ -1,3 +1,4 @@
+import Footer from './components/Footer/Footer.jsx'
 import NavBar from './components/NavBar/NavBar.jsx'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
       <NavBar />
+      <Footer />
     </>
   )
 }
