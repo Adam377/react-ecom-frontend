@@ -8,5 +8,6 @@
 .footerContent {
     text-align: center;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    font-family: Arial;
+    grid-template-columns: auto auto auto;
 }
