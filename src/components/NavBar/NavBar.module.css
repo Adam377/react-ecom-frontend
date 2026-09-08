@@ -1,15 +1,27 @@
-.title {
+.logo img {
+    padding-right: 20px;
+    width: 5rem;
+}
+
+.navBarContainer {
     background-color: red;
+    display: flex;
+    padding: 15px;    
+}
+
+.right {
+    align-content: center;
+}
+
+.right:last-child {
+    margin-left: auto;
+}
+
+.title {
     color: white;
     font-family: Impact;
     font-size: 40px;
     text-transform: uppercase;
 
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 15px;
-
-    display: flex;
-    align-items: flex-start;
+    align-content: center;
 }

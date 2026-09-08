@@ -1,0 +1,21 @@
+.searchBarContainer {
+    width: 380px;
+    min-width: 0;
+}
+
+.searchBarWrapper {
+    display: flex;
+    background:white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.searchInput {
+    background: transparent;
+    border: none;
+    outline: none;
+    white-space: nowrap;
+    margin-left: 15px;
+    flex: 1;
+}
