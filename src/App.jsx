@@ -16,18 +16,12 @@ function App() {
         <NavBar />
         <div className="contentContainer">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route index element={<Home />} />
             <Route path="/products" element={<Products />} />
           </Routes>
         </div>
         <Footer />
       </HashRouter>
-      {/* <TopBanner />
-      <NavBar />
-      <div className="contentContainer">
-        <Home />
-      </div>
-      <Footer /> */}
     </>
   )
 }
