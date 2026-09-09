@@ -2,7 +2,7 @@
 import logo from '../../assets/class156RCD.jpg';
 import SearchBar from '../SearchBar/SearchBar';
 
-import styles from './NavBar.module.css';
+import styles from './TopBanner.module.css';
 
 const NavBar = () => {
     return(

@@ -1,5 +1,5 @@
 import Footer from './components/Footer/Footer.jsx'
-import NavBar from './components/NavBar/NavBar.jsx'
+import TopBanner from './components/TopBanner/TopBanner.jsx'
 import Intro from './components/Intro/Intro.jsx';
 import LatestProduct from './components/LatestProduct/LatestProduct.jsx';
 
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <NavBar />
+      <TopBanner />
       <div className="contentContainer">
         <Intro />
         <LatestProduct />
