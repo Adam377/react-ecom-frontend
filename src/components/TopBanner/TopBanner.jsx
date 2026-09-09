@@ -4,10 +4,10 @@ import SearchBar from '../SearchBar/SearchBar';
 
 import styles from './TopBanner.module.css';
 
-const NavBar = () => {
+const TopBanner = () => {
     return(
         <>
-            <div className={styles.navBarContainer}>
+            <div className={styles.topBannerContainer}>
                 <div className={styles.logo}>
                     <img src={logo}/>
                 </div>
@@ -22,4 +22,4 @@ const NavBar = () => {
     );
 }
 
-export default NavBar
+export default TopBanner

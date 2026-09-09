@@ -3,8 +3,8 @@
     width: 5rem;
 }
 
-.navBarContainer {
-    background-color: red;
+.topBannerContainer {
+    background-color: #aa0000;
     display: flex;
     padding: 15px;    
 }
