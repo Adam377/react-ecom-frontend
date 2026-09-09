@@ -3,10 +3,17 @@
     width: 5rem;
 }
 
-.topBannerContainer {
-    background-color: #aa0000;
+.right {
+    align-items: center;
+    color: white;
     display: flex;
-    padding: 15px 100px 15px 100px;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+p {
+    padding: 0px 5px 0px 5px;
 }
 
 .title {
@@ -16,4 +23,19 @@
     text-transform: uppercase;
 
     align-content: center;
+}
+
+.topBannerContainer {
+    background-color: #aa0000;
+    display: flex;
+    padding: 15px 100px 15px 100px;
+}
+
+.topBannerContainer a {
+    align-content: center;
+    color: white;
+    font-weight: bold;
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
 }

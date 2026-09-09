@@ -1,6 +1,5 @@
-// import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from '../../assets/class156RCD.jpg';
-import SearchBar from '../SearchBar/SearchBar';
 
 import styles from './TopBanner.module.css';
 
@@ -13,6 +12,11 @@ const TopBanner = () => {
                 </div>
                 <div className={styles.title}>
                     Adam Haigh
+                </div>
+                <div className={styles.right}>
+                    <NavLink to="/downloads">Downloads</NavLink>
+                    <p>Wishlist</p>
+                    <p>Login</p>
                 </div>
             </div>
         </>

@@ -7,6 +7,7 @@ import Home from './pages/Home/Home.jsx';
 import Products from './pages/Products/Products.jsx';
 
 import './App.css';
+import Downloads from './pages/Downloads/Downloads.jsx';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <div className="contentContainer">
           <Routes>
             <Route index element={<Home />} />
+            <Route path="/downloads" element={<Downloads />} />
             <Route path="/products" element={<Products />} />
           </Routes>
         </div>
