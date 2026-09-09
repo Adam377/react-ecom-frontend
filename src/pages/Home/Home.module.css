@@ -13,9 +13,25 @@
 }
 
 .latestProductContainer {
+    border-color: rgba(128,128,128, 0.25);
+    border-radius: 5px;
+    border-style: solid;
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 0px 15px 15px;
+}
+
+.latestProductDate {
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.lastestProductImageTextContainer {
+    display: flex;
+    flex-direction: row;
 }
 
 .latestProductContent {
@@ -29,6 +45,10 @@
 
 .latestProductImage {
     width: 50%;
+}
+
+.latestProductImage img {
+    border-radius: 20px;
 }
 
 .latestProductImage img {

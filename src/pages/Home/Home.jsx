@@ -21,19 +21,24 @@ const Home = () => {
                 </div>
             </div>
             <div className={styles.latestProductContainer}>
-                <div className={styles.latestProductImage}>
-                    <img src={image} />
+                <div className={styles.latestProductDate}>
+                    6th June 2026
                 </div>
-                <div className={styles.latestProductContent}>
-                    <p>
-                        Our next scenario pack is here!
-                    </p>
-                    <p>
-                        Return to the busy Midland Mainline network by Just Trains with ten more scenarios centred around Sheffield, Leicester and Nottingham.
-                    </p>
-                    <p>
-                        The pack contains ten highly detailed and immersive scenarios set between 1994 and 2002 during the privitisation of British Railways.
-                    </p>
+                <div className={styles.lastestProductImageTextContainer}>
+                    <div className={styles.latestProductImage}>
+                        <img src={image} />
+                    </div>
+                    <div className={styles.latestProductContent}>
+                        <p>
+                            Our next scenario pack is here!
+                        </p>
+                        <p>
+                            Return to the busy Midland Mainline network by Just Trains with ten more scenarios centred around Sheffield, Leicester and Nottingham.
+                        </p>
+                        <p>
+                            The pack contains ten highly detailed and immersive scenarios set between 1994 and 2002 during the privitisation of British Railways.
+                        </p>
+                    </div>
                 </div>
             </div>
         </>
