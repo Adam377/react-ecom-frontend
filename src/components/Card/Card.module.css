@@ -1,0 +1,29 @@
+.cardContainer {
+    display: flex;
+    border-style: solid;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cardDescriptionContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardPrice {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.cardImage img {
+    border-radius: 20px;
+    max-width: 200px;
+    padding: 0px 20px 0px 20px;
+}
+
+.cardTitle {
+    color: #aa0000;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
