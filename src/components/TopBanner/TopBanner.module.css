@@ -6,15 +6,7 @@
 .topBannerContainer {
     background-color: #aa0000;
     display: flex;
-    padding: 15px;    
-}
-
-.right {
-    align-content: center;
-}
-
-.right:last-child {
-    margin-left: auto;
+    padding: 15px 100px 15px 100px;
 }
 
 .title {

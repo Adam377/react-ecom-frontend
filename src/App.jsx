@@ -1,4 +1,4 @@
-import { Router, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
 import Footer from './components/Footer/Footer.jsx'
 import TopBanner from './components/TopBanner/TopBanner.jsx'
@@ -10,7 +10,7 @@ import './App.css';
 function App() {
   return (
     <>
-      {/* <Router>
+      <HashRouter>
         <TopBanner />
         <NavBar />
         <div className="contentContainer">
@@ -19,13 +19,13 @@ function App() {
           </Routes>
         </div>
         <Footer />
-      </Router> */}
-      <TopBanner />
+      </HashRouter>
+      {/* <TopBanner />
       <NavBar />
       <div className="contentContainer">
         <Home />
       </div>
-      <Footer />
+      <Footer /> */}
     </>
   )
 }

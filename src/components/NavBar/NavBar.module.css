@@ -1,5 +1,14 @@
 .navBarContainer {
     background-color: #373737;
-    padding: 15px;
+    display: flex;
+    padding: 15px 100px 15px 100px;
     color: white;
+}
+
+.right {
+    align-content: center;
+}
+
+.right:last-child {
+    margin-left: auto;
 }

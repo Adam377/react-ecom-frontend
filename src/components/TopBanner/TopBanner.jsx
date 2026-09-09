@@ -14,9 +14,6 @@ const TopBanner = () => {
                 <div className={styles.title}>
                     Adam Haigh
                 </div>
-                <div className={styles.right}>
-                    <SearchBar />
-                </div>
             </div>
         </>
     );
