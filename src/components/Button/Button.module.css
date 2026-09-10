@@ -1,0 +1,10 @@
+.addToCartButton {
+    background-color: #373737;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    max-width: 150px;
+    padding: 10px 0px 10px 0px;
+    text-transform: uppercase;
+}

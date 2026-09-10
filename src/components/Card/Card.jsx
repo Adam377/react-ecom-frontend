@@ -1,3 +1,5 @@
+import Button from '../Button/Button.jsx';
+
 import styles from './Card.module.css';
 
 import image from '../../assets/class802TPEGrey.jpg';
@@ -13,6 +15,7 @@ const Card = () => {
                 <div className={styles.cardDescriptionContainer}>
                     <div className={styles.cardTitle}>Class 802 Announcement Pack</div>
                     <div className={styles.cardDescription}>Announcement plugin for TPE Class 802 services.</div>
+                    <Button />
                     <div className={styles.cardPrice}>£9.99</div>
                 </div>
             </div>
