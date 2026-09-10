@@ -8,9 +8,7 @@
     display: flex;
     border-style: solid;
     border-radius: 15px;
-    margin-left: auto;
-    margin-top: 20px;
-    margin-right: auto;
+    margin: 20px auto 20px auto;
     max-width: 1000px;
     padding: 20px;
 }
@@ -28,7 +26,7 @@
 }
 
 .cardImage img {
-    border-radius: 20px;
+    /* border-radius: 20px; */
     max-width: 200px;
     padding-right: 20px;
 }

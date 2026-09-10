@@ -2,7 +2,7 @@ import Button from '../Button/Button.jsx';
 
 import styles from './Card.module.css';
 
-import image from '../../assets/class802TPEGrey.jpg';
+// import image from '../../assets/class802TPEGrey.jpg';
 
 const Card = (props) => {
     return (
@@ -10,7 +10,7 @@ const Card = (props) => {
             {/* USE API DATA TO REPLACE HARDCODED DATA */}
             <div className={styles.cardContainer}>
                 <div className={styles.cardImage}>
-                    <img src={image} />
+                    <img src={props.image} />
                 </div>
                 <div className={styles.cardDescriptionContainer}>
                     <div className={styles.cardTitle}>{props.title}</div>
