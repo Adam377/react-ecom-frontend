@@ -1,10 +1,10 @@
 import styles from './Button.module.css';
 
-const Button = () => {
+const Button = (props) => {
     return (
         <>
             <button className={styles.addToCartButton}>
-                Add to cart
+                {props.text}
             </button>
         </>
     );

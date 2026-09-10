@@ -15,8 +15,10 @@ const Card = () => {
                 <div className={styles.cardDescriptionContainer}>
                     <div className={styles.cardTitle}>Class 802 Announcement Pack</div>
                     <div className={styles.cardDescription}>Announcement plugin for TPE Class 802 services.</div>
-                    <Button />
-                    <div className={styles.cardPrice}>£9.99</div>
+                    <div className={styles.buttonPriceContainer}>
+                        <Button text="Add to cart" />
+                        <div className={styles.cardPrice}>£9.99</div>
+                    </div>
                 </div>
             </div>
         </>
