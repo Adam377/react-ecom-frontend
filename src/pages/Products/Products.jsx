@@ -2,7 +2,8 @@ import Card from '../../components/Card/Card';
 
 import novaImg from '../../assets/class802TPEGrey.jpg';
 import azumaImg from '../../assets/class800LNER.jpg';
-import blueTSRSigns from '../../assets/blueTSRSigns.jpg';
+import blueTSRSignsImg from '../../assets/blueTSRSigns.jpg';
+import class43CarlisleImg from '../../assets/class43Carlisle.jpg';
 
 import styles from './Products.module.css';
 
@@ -24,7 +25,13 @@ const Products = () => {
             <Card
                 title="1980s Blue TSR Signs"
                 description="Custom blue TSR signs used by British Railways in the 1980s and 1990s."
-                image={blueTSRSigns}
+                image={blueTSRSignsImg}
+                price="£0.00"
+            />
+            <Card
+                title="Class 43 HST at Carlisle"
+                description="43159 at Carlisle 25 July 2026."
+                image={class43CarlisleImg}
                 price="£0.00"
             />
         </>
