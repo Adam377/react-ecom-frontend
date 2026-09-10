@@ -4,7 +4,7 @@ import styles from './Card.module.css';
 
 import image from '../../assets/class802TPEGrey.jpg';
 
-const Card = () => {
+const Card = (props) => {
     return (
         <>
             {/* USE API DATA TO REPLACE HARDCODED DATA */}
@@ -13,11 +13,11 @@ const Card = () => {
                     <img src={image} />
                 </div>
                 <div className={styles.cardDescriptionContainer}>
-                    <div className={styles.cardTitle}>Class 802 Announcement Pack</div>
-                    <div className={styles.cardDescription}>Announcement plugin for TPE Class 802 services.</div>
+                    <div className={styles.cardTitle}>{props.title}</div>
+                    <div className={styles.cardDescription}>{props.description}</div>
                     <div className={styles.buttonPriceContainer}>
                         <Button text="Add to cart" />
-                        <div className={styles.cardPrice}>£9.99</div>
+                        <div className={styles.cardPrice}>{props.price}</div>
                     </div>
                 </div>
             </div>
