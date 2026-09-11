@@ -9,6 +9,7 @@
     border-style: solid;
     border-radius: 15px;
     margin: 20px auto 20px auto;
+    min-width: 650px;
     max-width: 1000px;
     padding: 20px;
 }
