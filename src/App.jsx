@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { BrowserRouter as HashRouter, Route, Routes } from 'react-router-dom';
 
 import Footer from './components/Footer/Footer.jsx'
@@ -8,10 +7,11 @@ import Home from './pages/Home/Home.jsx';
 import Products from './pages/Products/Products.jsx';
 import Downloads from './pages/Downloads/Downloads.jsx';
 
+import { setItem } from './utils/localStorage.js';
+
 import productsJson from './data/products.json';
 
 import './App.css';
-import { setItem } from './utils/localStorage.js';
 
 const storeLocalData = async() => {
   setItem("products", productsJson)
