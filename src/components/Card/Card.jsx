@@ -17,7 +17,7 @@ const Card = (props) => {
                     <div className={styles.cardDescription}>{props.description}</div>
                     <div className={styles.buttonPriceContainer}>
                         <Button text="Add to cart" />
-                        <div className={styles.cardPrice}>{props.price}</div>
+                        <div className={styles.cardPrice}>£{props.price}</div>
                     </div>
                 </div>
             </div>

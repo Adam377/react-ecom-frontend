@@ -1,0 +1,54 @@
+[
+    {
+        "productId": "0001",
+        "productTitle": "Class 802 TPE Announcements Pack",
+        "productDescription": "Announcements plugin for TPE Class 802 services.",
+        "productPrice": "9.99",
+        "productImage":
+        {
+            "type": "image",
+            "url": "https://wrightlinesim.com/wp-content/uploads/2024/12/20241203015658_1.jpg",
+            "width": "1920",
+            "height": "1080"
+        }
+    },
+    {
+        "productId": "0002",
+        "productTitle": "Azuma Announcements Pack",
+        "productDescription": "Announcements plugin for LNER Azuma services.",
+        "productPrice": "9.99",
+        "productImage":
+        {
+            "type": "image",
+            "url": "https://wrightlinesim.com/wp-content/uploads/2024/12/20241215180622_1.jpg",
+            "width": "1920",
+            "height": "1080"
+        }
+    },
+    {
+        "productId": "0003",
+        "productTitle": "1980s Blue TSR Signs",
+        "productDescription": "Custom blue TSR sign assets from the 1980s and 1990s.",
+        "productPrice": "0.00",
+        "productImage":
+        {
+            "type": "image",
+            "url": "https://wrightlinesim.com/wp-content/uploads/2026/01/20260109215602_1-1.jpg",
+            "width": "1920",
+            "height": "1080"
+        }
+    },
+    {
+        "productId": "0004",
+        "productTitle": "1990s Yellow TSR Signs",
+        "productDescription": "Custom yellow TSR sign assets from the 1990s to the early 2000s",
+        "productPrice": "0.00",
+        "productImage":
+        {
+            "type": "image",
+            "url": "https://wrightlinesim.com/wp-content/uploads/2026/02/20260217121501_1.jpg",
+            "width": "1920",
+            "height": "1080"
+        }
+    }
+]
