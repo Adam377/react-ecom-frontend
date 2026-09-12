@@ -1,11 +1,26 @@
 import styles from './Home.module.css';
 import image from '../../assets/latest_product.png';
 import NarrowCard from '../../components/Cards/NarrowCard';
-
-import testImage1 from '../../assets/class43Carlisle.jpg';
-import testImage2 from '../../assets/blueTSRSigns.jpg';
+import { getItem } from '../../utils/localStorage';
 
 const Home = () => {
+    const productsJson = getItem("products");
+    const productsData = JSON.parse(productsJson);
+
+    const sortedProductsList = [...productsData].sort(
+        (a, b) => new Date(b.productReleaseDate) - new Date(a.productReleaseDate)
+    );
+
+    const latestProductsList = sortedProductsList.map((product) => (
+        <NarrowCard
+            key={product.productId}
+            cardType="narrow"
+            title={product.productTitle}
+            image={product.productImage.url}
+            price={product.productPrice}            
+        />
+    ));
+
     return(
         <>
             <div className={styles.introContainer}>
@@ -50,20 +65,7 @@ const Home = () => {
                     Latest Products
                 </div>
                 <div className={styles.latestProducts}>
-                    <NarrowCard
-                        // key={product.productId}
-                        wideCardType="narrow"
-                        title="Narrow Card 1"
-                        image={testImage1}
-                        price="0.99"
-                    />
-                    <NarrowCard
-                        // key={product.productId}
-                        wideCardType="narrow"
-                        title="Narrow Card 2"
-                        image={testImage2}
-                        price="0.99"
-                    />
+                    {latestProductsList}
                 </div>
             </div>
         </>

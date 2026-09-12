@@ -14,6 +14,20 @@
         }
     },
     {
+        "productId": "0004",
+        "productTitle": "1990s Yellow TSR Signs",
+        "productDescription": "Custom yellow TSR sign assets from the 1990s to the early 2000s",
+        "productPrice": "0.00",
+        "productReleaseDate": "2026-02-27",
+        "productImage":
+        {
+            "type": "image",
+            "url": "https://wrightlinesim.com/wp-content/uploads/2026/02/20260217121501_1.jpg",
+            "width": "1920",
+            "height": "1080"
+        }
+    },
+    {
         "productId": "0002",
         "productTitle": "Azuma Announcements Pack",
         "productDescription": "Announcements plugin for LNER Azuma services.",
@@ -37,20 +51,6 @@
         {
             "type": "image",
             "url": "https://wrightlinesim.com/wp-content/uploads/2026/01/20260109215602_1-1.jpg",
-            "width": "1920",
-            "height": "1080"
-        }
-    },
-    {
-        "productId": "0004",
-        "productTitle": "1990s Yellow TSR Signs",
-        "productDescription": "Custom yellow TSR sign assets from the 1990s to the early 2000s",
-        "productPrice": "0.00",
-        "productReleaseDate": "2026-02-27",
-        "productImage":
-        {
-            "type": "image",
-            "url": "https://wrightlinesim.com/wp-content/uploads/2026/02/20260217121501_1.jpg",
             "width": "1920",
             "height": "1080"
         }
