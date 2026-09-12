@@ -15,8 +15,8 @@ const TopBanner = () => {
                 </div>
                 <div className={styles.right}>
                     <NavLink to="/downloads">Downloads</NavLink>
-                    <p>Wishlist</p>
-                    <p>Login</p>
+                    <NavLink to="/">Wishlist</NavLink>
+                    <NavLink to="/">Login</NavLink>
                 </div>
             </div>
         </>

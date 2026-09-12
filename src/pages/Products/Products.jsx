@@ -1,4 +1,4 @@
-import Card from '../../components/Card/Card';
+import WideCard from '../../components/Cards/WideCard';
 
 import styles from './Products.module.css';
 
@@ -9,7 +9,7 @@ const Products = () => {
     const productsData = JSON.parse(productsJson);
 
     const productsList = productsData.map((product) => (
-        <Card
+        <WideCard
             key={product.productId}
             title={product.productTitle}
             description={product.productDescription}

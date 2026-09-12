@@ -1,5 +1,4 @@
 .introContainer {
-    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -12,18 +11,17 @@
     font-size: 20px;
 }
 
-.latestProductContainer {
+.highlightedProductContainer {
     border-color: rgba(128,128,128, 0.25);
     border-radius: 5px;
     border-style: solid;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    margin-bottom: 10px;
     padding: 15px 0px 15px 15px;
 }
 
-.latestProductDate {
+.highlightedProductDate {
     color: rgb(51, 51, 51);
     font-size: 20px;
     padding-bottom: 10px;
@@ -34,7 +32,7 @@
     flex-direction: row;
 }
 
-.latestProductContent {
+.highlightedProductContent {
     margin-top: auto;
     margin-bottom: auto;
     padding-left: 10px;
@@ -43,16 +41,30 @@
     width: 50%;
 }
 
-.latestProductImage {
+.highlightedProductImage {
     width: 50%;
 }
 
-.latestProductImage img {
+.highlightedProductImage img {
     border-radius: 20px;
 }
 
-.latestProductImage img {
+.highlightedProductImage img {
     height: 100%;
     object-fit: contain;
     width: 100%;
+}
+
+.latestProductsContainer {
+    background-color: #eeeeee;
+    margin-top: 10px;
+    padding: 15px 0px 15px 15px;
+}
+
+.latestProductsTitle {
+    color: #aa0000;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-transform: uppercase;
 }

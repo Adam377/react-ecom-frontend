@@ -4,6 +4,7 @@
         "productTitle": "Class 802 TPE Announcements Pack",
         "productDescription": "Announcements plugin for TPE Class 802 services.",
         "productPrice": "9.99",
+        "productReleaseDate": "2024-12-07",
         "productImage":
         {
             "type": "image",
@@ -17,6 +18,7 @@
         "productTitle": "Azuma Announcements Pack",
         "productDescription": "Announcements plugin for LNER Azuma services.",
         "productPrice": "9.99",
+        "productReleaseDate": "2025-01-01",
         "productImage":
         {
             "type": "image",
@@ -30,6 +32,7 @@
         "productTitle": "1980s Blue TSR Signs",
         "productDescription": "Custom blue TSR sign assets from the 1980s and 1990s.",
         "productPrice": "0.00",
+        "productReleaseDate": "2026-01-10",
         "productImage":
         {
             "type": "image",
@@ -43,6 +46,7 @@
         "productTitle": "1990s Yellow TSR Signs",
         "productDescription": "Custom yellow TSR sign assets from the 1990s to the early 2000s",
         "productPrice": "0.00",
+        "productReleaseDate": "2026-02-27",
         "productImage":
         {
             "type": "image",

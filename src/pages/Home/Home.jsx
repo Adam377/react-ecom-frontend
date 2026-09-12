@@ -1,5 +1,8 @@
 import styles from './Home.module.css';
 import image from '../../assets/latest_product.png';
+import NarrowCard from '../../components/Cards/NarrowCard';
+
+import testImage from '../../assets/class43Carlisle.jpg';
 
 const Home = () => {
     return(
@@ -20,15 +23,15 @@ const Home = () => {
                     </p>
                 </div>
             </div>
-            <div className={styles.latestProductContainer}>
-                <div className={styles.latestProductDate}>
+            <div className={styles.highlightedProductContainer}>
+                <div className={styles.highlightedProductDate}>
                     6th June 2026
                 </div>
                 <div className={styles.lastestProductImageTextContainer}>
-                    <div className={styles.latestProductImage}>
+                    <div className={styles.highlightedProductImage}>
                         <img src={image} />
                     </div>
-                    <div className={styles.latestProductContent}>
+                    <div className={styles.highlightedProductContent}>
                         <p>
                             Our next scenario pack is here!
                         </p>
@@ -38,6 +41,22 @@ const Home = () => {
                         <p>
                             The pack contains ten highly detailed and immersive scenarios set between 1994 and 2002 during the privitisation of British Railways.
                         </p>
+                    </div>
+                </div>
+            </div>
+            <div className={styles.latestProductsContainer}>
+                <div className={styles.latestProductsTitle}>
+                    Latest Products
+                </div>
+                <div className={styles.latestProducts}>
+                    <div className={styles.latestProductswideCardsContainer}>
+                        <NarrowCard
+                            // key={product.productId}
+                            wideCardType="narrow"
+                            title="Narrow Card Title"
+                            image={testImage}
+                            price="0.99"
+                        />
                     </div>
                 </div>
             </div>
