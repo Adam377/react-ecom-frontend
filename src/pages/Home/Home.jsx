@@ -1,17 +1,10 @@
 import styles from './Home.module.css';
 import image from '../../assets/latest_product.png';
+import { getAllProductsSortedByDateDescending } from '../../utils/productsList';
 import NarrowCard from '../../components/Cards/NarrowCard';
-import { getItem } from '../../utils/localStorage';
 
 const Home = () => {
-    const productsJson = getItem("products");
-    const productsData = JSON.parse(productsJson);
-
-    const sortedProductsList = [...productsData].sort(
-        (a, b) => new Date(b.productReleaseDate) - new Date(a.productReleaseDate)
-    );
-
-    const latestProductsList = sortedProductsList.map((product) => (
+    const latestProductsList = getAllProductsSortedByDateDescending().map((product) => (
         <NarrowCard
             key={product.productId}
             cardType="narrow"

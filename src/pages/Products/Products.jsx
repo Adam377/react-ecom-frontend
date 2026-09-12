@@ -1,14 +1,10 @@
 import WideCard from '../../components/Cards/WideCard';
+import { getAllProductsSortedByDateDescending } from '../../utils/productsList';
 
 import styles from './Products.module.css';
 
-import { getItem } from '../../utils/localStorage';
-
 const Products = () => {
-    const productsJson = getItem("products")
-    const productsData = JSON.parse(productsJson);
-
-    const productsList = productsData.map((product) => (
+    const productsList = getAllProductsSortedByDateDescending().map((product) => (
         <WideCard
             key={product.productId}
             title={product.productTitle}
