@@ -3,7 +3,7 @@ import image from '../../assets/latest_product.png';
 import { getAllProductsSortedByDateDescending } from '../../utils/productsList';
 import NarrowCard from '../../components/Cards/NarrowCard';
 
-const Home = () => {
+const Home = () => {    
     const latestProductsList = getAllProductsSortedByDateDescending().map((product) => (
         <NarrowCard
             key={product.productId}
@@ -13,6 +13,9 @@ const Home = () => {
             price={product.productPrice}            
         />
     ));
+
+    // only get first 4 products for homepage
+    const first4Items = latestProductsList.slice(0, 4);
 
     return(
         <>
@@ -58,7 +61,8 @@ const Home = () => {
                     Latest Products
                 </div>
                 <div className={styles.latestProducts}>
-                    {latestProductsList}
+                    {first4Items}
+                    {/* {latestProductsList} */}
                 </div>
             </div>
         </>

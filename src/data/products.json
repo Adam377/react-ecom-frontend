@@ -54,5 +54,33 @@
             "width": "1920",
             "height": "1080"
         }
+    },
+    {
+        "productId": "0005",
+        "productTitle": "Chat Moss Scenario Pack 1 V2 (2017 - 2019)",
+        "productDescription": "Scenario pack for the Chat Moss route set between 2017 and 2019.",
+        "productPrice": "3.99",
+        "productReleaseDate": "2025-11-06",
+        "productImage":
+        {
+            "type": "image",
+            "url": "https://wrightlinesim.com/wp-content/uploads/2025/10/ahaighscenarios10-tn-v2.png",
+            "width": "1920",
+            "height": "1080"
+        }
+    },
+    {
+        "productId": "0006",
+        "productTitle": "WCML Over Shap Scenario Pack 3 (1982 - 1989)",
+        "productDescription": "Scenario pack for WCML Over Shap set between 1982 and 1989.",
+        "productPrice": "5.99",
+        "productReleaseDate": "2026-01-31",
+        "productImage":
+        {
+            "type": "image",
+            "url": "https://wrightlinesim.com/wp-content/uploads/2026/01/ahaighscenarios12-tn.png",
+            "width": "1920",
+            "height": "1080"
+        }
     }
 ]
