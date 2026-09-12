@@ -2,7 +2,8 @@ import styles from './Home.module.css';
 import image from '../../assets/latest_product.png';
 import NarrowCard from '../../components/Cards/NarrowCard';
 
-import testImage from '../../assets/class43Carlisle.jpg';
+import testImage1 from '../../assets/class43Carlisle.jpg';
+import testImage2 from '../../assets/blueTSRSigns.jpg';
 
 const Home = () => {
     return(
@@ -49,15 +50,20 @@ const Home = () => {
                     Latest Products
                 </div>
                 <div className={styles.latestProducts}>
-                    <div className={styles.latestProductswideCardsContainer}>
-                        <NarrowCard
-                            // key={product.productId}
-                            wideCardType="narrow"
-                            title="Narrow Card Title"
-                            image={testImage}
-                            price="0.99"
-                        />
-                    </div>
+                    <NarrowCard
+                        // key={product.productId}
+                        wideCardType="narrow"
+                        title="Narrow Card 1"
+                        image={testImage1}
+                        price="0.99"
+                    />
+                    <NarrowCard
+                        // key={product.productId}
+                        wideCardType="narrow"
+                        title="Narrow Card 2"
+                        image={testImage2}
+                        price="0.99"
+                    />
                 </div>
             </div>
         </>
