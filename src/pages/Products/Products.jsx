@@ -1,19 +1,21 @@
 import WideCard from '../../components/Cards/WideCard';
-import { getAllProductsSortedByDateDescending } from '../../utils/productsList';
+import { useProductContext } from '../../context/ProductContext';
 
 import styles from './Products.module.css';
 
 const Products = () => {
-    const productsList = getAllProductsSortedByDateDescending().map((product) => (
+    const {products} = useProductContext();
+
+    const productsList = products.map((p) => 
         <WideCard
-            key={product.productId}
-            id={product.productId}
-            title={product.productTitle}
-            description={product.productDescription}
-            image={product.productImage.url}
-            price={product.productPrice}
+            key={p.productId}
+            id={p.productId}
+            title={p.productTitle}
+            description={p.productDescription}
+            image={p.productImage.url}
+            price={p.productPrice}
         />
-    ));
+    );
 
     return(
         <>
