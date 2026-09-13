@@ -7,6 +7,7 @@ const Products = () => {
     const productsList = getAllProductsSortedByDateDescending().map((product) => (
         <WideCard
             key={product.productId}
+            id={product.productId}
             title={product.productTitle}
             description={product.productDescription}
             image={product.productImage.url}

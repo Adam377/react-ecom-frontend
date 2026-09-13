@@ -15,7 +15,7 @@ const Home = () => {
     ));
 
     // only get first 4 products for homepage
-    const first4Items = latestProductsList.slice(0, 4);
+    const first4ItemsList = latestProductsList.slice(0, 4);
 
     return(
         <>
@@ -61,8 +61,7 @@ const Home = () => {
                     Latest Products
                 </div>
                 <div className={styles.latestProducts}>
-                    {first4Items}
-                    {/* {latestProductsList} */}
+                    {first4ItemsList}
                 </div>
             </div>
         </>

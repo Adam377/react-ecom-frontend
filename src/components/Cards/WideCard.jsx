@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import Button from '../Button/Button.jsx';
 
 import styles from './WideCard.module.css';
@@ -7,7 +9,9 @@ const WideCard = (props) => {
         <>
             <div className={styles.wideCardContainer}>
                 <div className={styles.wideCardImage}>
-                    <img src={props.image} />
+                    <NavLink to={`/products/${props.id}`}>
+                        <img src={props.image} />
+                    </NavLink>
                 </div>
                 <div className={styles.wideCardDescriptionContainer}>
                     <div className={styles.wideCardTitle}>{props.title}</div>

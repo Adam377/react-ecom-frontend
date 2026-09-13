@@ -6,6 +6,7 @@ import NavBar from './components/NavBar/NavBar.jsx';
 import Home from './pages/Home/Home.jsx';
 import Products from './pages/Products/Products.jsx';
 import Downloads from './pages/Downloads/Downloads.jsx';
+import ProductDetail from './pages/ProductDetail/ProductDetail.jsx';
 
 import { setItem } from './utils/localStorage.js';
 
@@ -30,6 +31,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/downloads" element={<Downloads />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/products/:id" element={<ProductDetail />} />
           </Routes>
         </div>
         <Footer />
