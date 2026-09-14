@@ -1,22 +1,27 @@
 import styles from './Home.module.css';
 import image from '../../assets/latest_product.png';
-import { getAllProductsSortedByDateDescending } from '../../utils/productsList';
 import NarrowCard from '../../components/Cards/NarrowCard';
+import { useProductContext } from '../../context/ProductContext';
 
-const Home = () => {    
-    // const latestProductsList = getAllProductsSortedByDateDescending().map((product) => (
-    //     <NarrowCard
-    //         key={product.productId}
-    //         cardType="narrow"
-    //         title={product.productTitle}
-    //         image={product.productImage.url}
-    //         price={product.productPrice}            
-    //     />
-    // ));
+const Home = () => {
+    const {isInitialised} = useProductContext();
+    const {products} = useProductContext();
+
+    const latestProductsList = products.map((p) =>
+        <NarrowCard
+            key={p.productId}
+            title={p.productTitle}
+            image={p.productImage.url}
+            price={p.productPrice}
+        />
+    );
 
     // only get first 4 products for homepage
-    // const first4ItemsList = latestProductsList.slice(0, 4);
+    const first4ItemsList = latestProductsList.slice(0, 4);
 
+    if(!isInitialised) {
+        return(<p>Content not loaded yet</p>);
+    }
     return(
         <>
             <div className={styles.introContainer}>
@@ -61,7 +66,7 @@ const Home = () => {
                     Latest Products
                 </div>
                 <div className={styles.latestProducts}>
-                    {/* {first4ItemsList} */}
+                    {first4ItemsList}
                 </div>
             </div>
         </>
