@@ -2,7 +2,8 @@
     {
         "productId": "0001",
         "productTitle": "Class 802 TPE Announcements Pack",
-        "productDescription": "Announcements plugin for TPE Class 802 services.",
+        "productShortDescription": "Announcements plugin for TPE Class 802 services.",
+        "productLongDescription": "Want to take your immersion to the next level? Get this pack today, which not only provides realistic onboard announcements for the TPE 802 from Armstrong Powerhouse, but also provides some highly detailed scenarios to give you plenty of engaging runs across the Pennines! Want to use it in your own scenarios or quick drives? Well it's easy, load the software up, set your destination on the train, enter the code into the software and away you go. It’s that easy!",
         "productPrice": "9.99",
         "productReleaseDate": "2024-12-07",
         "productImage":
@@ -16,7 +17,8 @@
     {
         "productId": "0004",
         "productTitle": "1990s Yellow TSR Signs",
-        "productDescription": "Custom yellow TSR sign assets from the 1990s to the early 2000s",
+        "productShortDescription": "Custom yellow TSR sign assets from the 1990s to the early 2000s",
+        "productLongDescription": "Following our Blue TSR sign pack, these signs were used in the 1990s until they were replaced with the current reflective boards from 1996. In collaboration with TSRollingStock, this pack brings you the yellow TSR signs with custom models for your 1990s scenarios!",
         "productPrice": "0.00",
         "productReleaseDate": "2026-02-27",
         "productImage":
@@ -30,7 +32,8 @@
     {
         "productId": "0002",
         "productTitle": "Azuma Announcements Pack",
-        "productDescription": "Announcements plugin for LNER Azuma services.",
+        "productShortDescription": "Announcements plugin for LNER Azuma services.",
+        "productLongDescription": "Immerse yourself into the Azuma fleet with our Announcement Pack for LNER's Class 800 and 801 'Azuma' fleet! With our easy-to-use software, you can play real-world announcements with Armstrong Powerhouse’s Class 800-803 Enhancement Pack across the entire East Coast Mainline from London Kings Cross to Glasgow and Edinburgh!",
         "productPrice": "9.99",
         "productReleaseDate": "2025-01-01",
         "productImage":
@@ -44,7 +47,8 @@
     {
         "productId": "0003",
         "productTitle": "1980s Blue TSR Signs",
-        "productDescription": "Custom blue TSR sign assets from the 1980s and 1990s.",
+        "productShortDescription": "Custom blue TSR sign assets from the 1980s and 1990s.",
+        "productLongDescription": "Between the 1980s and 1990s, TSR (Temporary Speed Restrictions) were depicted with white digits on a blue background. These were superceded by black digits with yellow backgrounds that are in use today. In collaboration with TSRollingStock, this pack brings you the older blue TSR signs with custom models for your 1980s scenarios!",
         "productPrice": "0.00",
         "productReleaseDate": "2026-01-10",
         "productImage":
@@ -58,7 +62,8 @@
     {
         "productId": "0005",
         "productTitle": "Chat Moss Scenario Pack 1 V2 (2017 - 2019)",
-        "productDescription": "Scenario pack for the Chat Moss route set between 2017 and 2019.",
+        "productShortDescription": "Scenario pack for the Chat Moss route set between 2017 and 2019.",
+        "productLongDescription": "Set between 2017 and 2019, this pack contains seven scenarios between the bustling cities of Liverpool and Manchester via the busy Chat Moss line through Newton-le-Willows. The pack covers a variety of services from express and stopping passenger to freight and departmental services – and even a test train!",
         "productPrice": "3.99",
         "productReleaseDate": "2025-11-06",
         "productImage":
@@ -72,7 +77,8 @@
     {
         "productId": "0006",
         "productTitle": "WCML Over Shap Scenario Pack 3 (1982 - 1989)",
-        "productDescription": "Scenario pack for WCML Over Shap set between 1982 and 1989.",
+        "productShortDescription": "Scenario pack for WCML Over Shap set between 1982 and 1989.",
+        "productLongDescription": "We return to the classic WCML Over Shap stepping back to the BR Blue period of British Railways with this scenario pack. Contained are ten highly detailed and hands-on scenarios so you can drive classic traction from the Class 31 to the Class 370 Advanced Passenger Train! Services range from stopping passenger to empty stock moves with freight and a couple of test trains! All of the scenarios in the pack should take around twelve hours to complete.",
         "productPrice": "5.99",
         "productReleaseDate": "2026-01-31",
         "productImage":

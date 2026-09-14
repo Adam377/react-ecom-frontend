@@ -11,11 +11,14 @@ const Products = () => {
             key={p.productId}
             id={p.productId}
             title={p.productTitle}
-            description={p.productDescription}
+            shortDescription={p.productShortDescription}
+            longDescription={p.productLongDescription}
             image={p.productImage.url}
             price={p.productPrice}
         />
     );
+
+    console.log(productsList);
 
     return(
         <>
