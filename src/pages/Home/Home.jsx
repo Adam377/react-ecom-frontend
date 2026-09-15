@@ -16,12 +16,18 @@ const Home = () => {
         />
     );
 
+    const latestProduct = products.slice(0, 1);
+
     // only get first 4 products for homepage
     const first4ItemsList = latestProductsList.slice(0, 4);
 
     if(!isInitialised) {
         return(<p>Content not loaded yet</p>);
     }
+
+    const date = new Date(latestProduct[0].productReleaseDate);
+    const formattedDate = date.toLocaleDateString('en-GB');
+
     return(
         <>
             <div className={styles.introContainer}>
@@ -42,21 +48,18 @@ const Home = () => {
             </div>
             <div className={styles.highlightedProductContainer}>
                 <div className={styles.highlightedProductDate}>
-                    6th June 2026
+                    {formattedDate}
                 </div>
                 <div className={styles.lastestProductImageTextContainer}>
                     <div className={styles.highlightedProductImage}>
-                        <img src={image} />
+                        <img src={latestProduct[0].productImage.url} />
                     </div>
                     <div className={styles.highlightedProductContent}>
                         <p>
-                            Our next scenario pack is here!
+                            {latestProduct[0].productShortDescription}
                         </p>
                         <p>
-                            Return to the busy Midland Mainline network by Just Trains with ten more scenarios centred around Sheffield, Leicester and Nottingham.
-                        </p>
-                        <p>
-                            The pack contains ten highly detailed and immersive scenarios set between 1994 and 2002 during the privitisation of British Railways.
+                            {latestProduct[0].productLongDescription}
                         </p>
                     </div>
                 </div>
