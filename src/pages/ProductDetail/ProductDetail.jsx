@@ -27,7 +27,7 @@ const ProductDetail = () => {
                         £{product.productPrice}
                     </div>
                     <div className={styles.buyButton}>
-                        <Button text="Add to cart" />
+                        <Button text="Add to cart" productId={product.productId} />
                     </div>
                 </div>
                 <div className={styles.descriptionContainer}>

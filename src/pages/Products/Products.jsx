@@ -18,8 +18,6 @@ const Products = () => {
         />
     );
 
-    console.log(productsList);
-
     return(
         <>
             {productsList}

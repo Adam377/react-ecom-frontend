@@ -17,7 +17,7 @@ const WideCard = (props) => {
                     <div className={styles.wideCardTitle}>{props.title}</div>
                     <div className={styles.wideCardDescription}>{props.shortDescription}</div>
                     <div className={styles.buttonPriceContainer}>
-                        <Button text="Add to cart" />
+                        <Button text="Add to cart" productId={props.id} />
                         <div className={styles.wideCardPrice}>£{props.price}</div>
                     </div>
                 </div>

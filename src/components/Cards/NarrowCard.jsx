@@ -11,7 +11,7 @@ const NarrowCard = (props) => {
                 </div>
                 <div className={styles.narrowCardTitle}>{props.title}</div>
                 <div className={styles.buttonPriceContainer}>
-                    <Button text="Add to cart" />
+                    <Button text="Add to cart" productId={props.productId} />
                     <div className={styles.narrowCardPrice}>£{props.price}</div>
                 </div>
             </div>

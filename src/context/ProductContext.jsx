@@ -5,16 +5,13 @@ const ProductContext = createContext();
 
 export const ProductProvider = ({children}) => {
     const [products, setProducts] = useState([]);
+    
     // create initialised state so all products are loaded before user can use site
     const [isInitialised, setIsInitialised] = useState(false);
 
     // use effect to load products from local storage and put into stateful variable
     useEffect(() => {
-        const load = async () => {
-            setProducts(getAllProductsSortedByDateDescending);
-        }
-
-        load();
+        setProducts(getAllProductsSortedByDateDescending);
 
         setIsInitialised(true);
     }, []);

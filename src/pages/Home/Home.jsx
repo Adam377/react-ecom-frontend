@@ -10,6 +10,7 @@ const Home = () => {
     const latestProductsList = products.map((p) =>
         <NarrowCard
             key={p.productId}
+            productId={p.productId}
             title={p.productTitle}
             image={p.productImage.url}
             price={p.productPrice}

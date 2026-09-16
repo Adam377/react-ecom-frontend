@@ -9,7 +9,7 @@ const Footer = () => {
                         <h3>INFORMATION</h3>
                         <p>FAQs</p>
                         <p>Newsletter</p>
-                        <a className={styles.footerLink} href="https://docs.google.com/spreadsheets/d/1YCOIfQddapl5Q41QgT8fEHQazdM0aucUzPnhNIryBqc/edit?gid=0#gid=0">Update Log</a>
+                        <a className={styles.footerLink} href="https://docs.google.com/spreadsheets/d/1YCOIfQddapl5Q41QgT8fEHQazdM0aucUzPnhNIryBqc/edit?gid=0#gid=0" target="_blank" >Update Log</a>
                         <p>Privacy Policy</p>
                         <p>T&Cs</p>
                     </section>
