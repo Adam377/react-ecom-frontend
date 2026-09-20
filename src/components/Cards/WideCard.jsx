@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-import Button from '../Button/Button.jsx';
+import AddToCartButton from '../Button/AddToCartButton.jsx';
 
 import styles from './WideCard.module.css';
 
@@ -17,8 +17,13 @@ const WideCard = (props) => {
                     <div className={styles.wideCardTitle}>{props.title}</div>
                     <div className={styles.wideCardDescription}>{props.shortDescription}</div>
                     <div className={styles.buttonPriceContainer}>
-                        <Button text="Add to cart" productId={props.id} />
-                        <div className={styles.wideCardPrice}>£{props.price}</div>
+                        <AddToCartButton productId={props.id} />
+                        <div className={styles.wideCardPrice}>
+                            <span>
+                                £
+                            </span>
+                            {props.price}
+                        </div>
                     </div>
                 </div>
             </div>

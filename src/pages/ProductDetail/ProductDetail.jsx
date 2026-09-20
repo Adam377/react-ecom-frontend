@@ -1,8 +1,9 @@
 import { useParams } from 'react-router-dom';
 import { useProductContext } from '../../context/ProductContext';
 
+import AddToCartButton from '../../components/Button/AddToCartButton';
+
 import styles from './ProductDetail.module.css';
-import Button from '../../components/Button/Button';
 
 const ProductDetail = () => {
     const {getProductById} = useProductContext();
@@ -24,10 +25,13 @@ const ProductDetail = () => {
                 </div>
                 <div className={styles.priceButtonContainer}>
                     <div className={styles.price}>
-                        £{product.productPrice}
+                        <span>
+                            £
+                        </span>
+                        {product.productPrice}
                     </div>
                     <div className={styles.buyButton}>
-                        <Button text="Add to cart" productId={product.productId} />
+                        <AddToCartButton productId={product.productId} />
                     </div>
                 </div>
                 <div className={styles.descriptionContainer}>

@@ -1,0 +1,29 @@
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.cartDetailContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.checkoutCard {
+    background-color: #eeeeee;
+    border-radius: 5px;
+    margin-bottom: 0;
+    margin-top: auto;
+    padding: 10px;
+}
+
+.checkoutContainer {
+    align-content: center;
+}
+
+.total {
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-align: right;
+}

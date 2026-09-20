@@ -2,15 +2,14 @@ import { useContext, useEffect, useState } from 'react';
 import { useProductContext } from '../../context/ProductContext';
 import CartContext from '../../context/CartContext';
 
-import styles from './Button.module.css';
+import styles from './AddToCartButton.module.css';
 
-const Button = (props) => {
+const AddToCartButton = (props) => {
     const {getProductById} = useProductContext();
     const [productInCart, setProductInCart] = useState({});
     const {cart, addToCart} = useContext(CartContext);
 
     const handleItemToCartClick = () => {
-        // console.log(productInCart);
         addToCart(productInCart);
     };
 
@@ -21,10 +20,10 @@ const Button = (props) => {
     return (
         <>
             <button className={styles.addToCartButton} onClick={handleItemToCartClick}>
-                {props.text}
+                Add to cart
             </button>
         </>
     );
 }
 
-export default Button;
+export default AddToCartButton;

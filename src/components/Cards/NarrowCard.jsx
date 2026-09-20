@@ -1,4 +1,4 @@
-import Button from '../Button/Button.jsx';
+import AddToCartButton from '../Button/AddToCartButton.jsx';
 
 import styles from './NarrowCard.module.css';
 
@@ -11,8 +11,13 @@ const NarrowCard = (props) => {
                 </div>
                 <div className={styles.narrowCardTitle}>{props.title}</div>
                 <div className={styles.buttonPriceContainer}>
-                    <Button text="Add to cart" productId={props.productId} />
-                    <div className={styles.narrowCardPrice}>£{props.price}</div>
+                    <AddToCartButton productId={props.productId} />
+                    <div className={styles.narrowCardPrice}>
+                        <span>
+                            £
+                        </span>
+                        {props.price}
+                    </div>
                 </div>
             </div>
         </>

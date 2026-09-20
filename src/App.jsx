@@ -13,6 +13,7 @@ import { setItem } from './utils/localStorage.js';
 import productsJson from './data/products.json';
 
 import './App.css';
+import CartDetail from './pages/CartDetail/CartDetail.jsx';
 
 const storeLocalData = async() => {
   setItem("products", productsJson)
@@ -29,6 +30,7 @@ function App() {
         <div className="contentContainer">
           <Routes>
             <Route index element={<Home />} />
+            <Route path="cart-detail" element={<CartDetail />} />
             <Route path="/downloads" element={<Downloads />} />
             <Route path="/products" element={<Products />} />
             <Route path="/products/:id" element={<ProductDetail />} />
