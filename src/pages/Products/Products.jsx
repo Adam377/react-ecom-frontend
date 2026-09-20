@@ -1,3 +1,4 @@
+import { useParams } from 'react-router-dom';
 import WideCard from '../../components/Cards/WideCard';
 import { useProductContext } from '../../context/ProductContext';
 
@@ -20,6 +21,9 @@ const Products = () => {
 
     return(
         <>
+            <div className={styles.pageTitle}>
+                Products
+            </div>
             {productsList}
         </>
     )

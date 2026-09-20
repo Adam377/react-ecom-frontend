@@ -9,7 +9,18 @@ import { NavLink } from "react-router-dom";
 const CartDetail = () => {
     const {cart, addToCart} = useContext(CartContext);
 
-    if(cart.length === 0) return <p>Your cart is empty</p>
+    if(cart.length === 0) {
+        return(
+            <>
+                <div className={styles.emptyCartContainer}>
+                    Your cart is empty!
+                    <NavLink to='/products'>
+                        <SimpleLinkButton>Start shopping</SimpleLinkButton>
+                    </NavLink>
+                </div>
+            </>
+        )
+    }
 
     let cartTotal = 0;
 
@@ -28,6 +39,9 @@ const CartDetail = () => {
 
     return(
         <>
+            <div className={styles.pageTitle}>
+                Your basket
+            </div>
             <div className={styles.cartDetailContainer}>
                 <div className={styles.cartListContainer}>
                     {cartList}

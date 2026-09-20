@@ -4,9 +4,7 @@ const CartCard = (props) => {
     return (
         <>
             <div className={styles.cartCardContainer}>
-                <div className={styles.cartCardImage}>
-                    <img src={props.image} />
-                </div>
+                <img className={styles.cartCardImage} src={props.image} />
                 <div className={styles.cartCardTitle}>{props.title}</div>
                 <div className={styles.cartCardPrice}>
                     <span>

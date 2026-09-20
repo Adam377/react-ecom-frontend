@@ -1,6 +1,6 @@
 .cartCardContainer {
-    border: solid 0.5px;
-    border-color: black;
+    /* border: solid 0.5px; */
+    /* border-color: black; */
     display: flex;
     min-width: 650px;
     justify-content: space-between;
@@ -14,7 +14,7 @@
     font-size: 22px;
 }
 
-.cartCardImage img {
+.cartCardImage {
     border-radius: 15px;
     max-width: 200px;
 }

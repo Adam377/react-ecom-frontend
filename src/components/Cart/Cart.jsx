@@ -11,12 +11,15 @@ import styles from './Cart.module.css'
 const Cart = () => {
     const {cart, addToCart} = useContext(CartContext);
 
+    const cartQuantity = cart.length;
+
     return(
         <>
             <NavLink to="/cart-detail">
                 <div className={styles.cartContainer}>
                     <FontAwesomeIcon icon={faShoppingCart} />
                 </div>
+                {/* {cartQuantity} */}
             </NavLink>
         </>
     )
