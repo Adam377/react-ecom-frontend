@@ -1,15 +1,14 @@
-import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import CartContext from "../../context/CartContext";
+import { useCartContext } from "../../context/CartContext";
 
 import styles from './Cart.module.css'
 
 const Cart = () => {
-    const {cart, addToCart} = useContext(CartContext);
+    const {cart, addToCart} = useCartContext();
 
     const cartQuantity = cart.length;
 
@@ -19,7 +18,7 @@ const Cart = () => {
                 <div className={styles.cartContainer}>
                     <FontAwesomeIcon icon={faShoppingCart} />
                 </div>
-                {/* {cartQuantity} */}
+                {cartQuantity}
             </NavLink>
         </>
     )

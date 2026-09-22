@@ -1,5 +1,4 @@
-import { useContext } from "react";
-import CartContext from "../../context/CartContext";
+import { useCartContext } from "../../context/CartContext";
 import CartCard from "../../components/Cards/CartCard";
 
 import styles from './CartDetail.module.css';
@@ -7,7 +6,7 @@ import SimpleLinkButton from "../../components/Button/SimpleLinkButton";
 import { NavLink } from "react-router-dom";
 
 const CartDetail = () => {
-    const {cart, addToCart} = useContext(CartContext);
+    const {cart, addToCart} = useCartContext();
 
     if(cart.length === 0) {
         return(
@@ -31,6 +30,7 @@ const CartDetail = () => {
     const cartList = cart.map(item => 
         <CartCard
             key={item.cartItem.productId}
+            id={item.cartItem.productId}
             image={item.cartItem.productImage.url}
             title={item.cartItem.productTitle}
             price={item.cartItem.productPrice}

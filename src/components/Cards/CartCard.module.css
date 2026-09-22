@@ -1,6 +1,4 @@
 .cartCardContainer {
-    /* border: solid 0.5px; */
-    /* border-color: black; */
     display: flex;
     min-width: 650px;
     justify-content: space-between;
@@ -24,6 +22,12 @@
     color: #aa0000;
     font-size: 20px;
     font-weight: bold;
-    max-width: 60%;
+    max-width: 30%;
     text-align: center;
+}
+
+.removeFromCartButton {
+    background-color: red;
+    height: 35px;
+    align-self: center;
 }

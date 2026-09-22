@@ -1,13 +1,13 @@
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useProductContext } from '../../context/ProductContext';
-import CartContext from '../../context/CartContext';
+import { useCartContext } from '../../context/CartContext';
 
 import styles from './AddToCartButton.module.css';
 
 const AddToCartButton = (props) => {
     const {getProductById} = useProductContext();
     const [productInCart, setProductInCart] = useState({});
-    const {cart, addToCart} = useContext(CartContext);
+    const {cart, addToCart} = useCartContext();
 
     const handleItemToCartClick = () => {
         addToCart(productInCart);
