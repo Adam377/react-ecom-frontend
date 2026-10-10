@@ -1,7 +1,7 @@
 .buttonPriceContainer {
     display: flex;
-    margin-top: auto;
     justify-content: space-between;
+    margin-top: auto;
 }
 
 .wideCardContainer {
@@ -9,22 +9,16 @@
     border-style: solid;
     border-radius: 15px;
     margin: 20px auto 20px auto;
-    min-width: 650px;
-    max-width: 1000px;
     padding: 20px;
 }
 
 .wideCardDescriptionContainer {
     display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    width: 100%;
 }
 
 .wideCardPrice {
     color: rgb(51, 51, 51);
     font-size: 22px;
-    margin-top: auto;
 }
 
 .wideCardImage img {
@@ -38,4 +32,49 @@
     font-weight: bold;
     padding-bottom: 10px;
     /* text-decoration: none; */
+}
+
+@media (max-width: 600px) {
+    .buttonPriceContainer {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .wideCardContainer {
+        flex-direction: column;
+    }
+
+    .wideCardDescription {
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .wideCardDescriptionContainer {
+        flex-direction: column;
+    }
+
+    .wideCardImage {
+        align-self: center;
+    }
+
+    .wideCardTitle {
+        text-align: center;
+    }
+}
+
+@media (min-width: 600px) {
+    .wideCardContainer {
+        min-width: 650px;
+        max-width: 1000px;
+    }
+
+    .wideCardDescriptionContainer {
+        flex-direction: column;
+        padding-left: 20px;
+        width: 100%;
+    }
+
+    .wideCardPrice {
+        margin-top: auto;
+    }
 }

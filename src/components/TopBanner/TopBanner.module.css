@@ -50,7 +50,11 @@ p {
         display: none;
     }
 
-    .topBannerContainer, .right {
+    .topBannerContainer {
+        flex-direction: column;
+    }
+
+    .right {
         flex-direction: column;
     }
 
