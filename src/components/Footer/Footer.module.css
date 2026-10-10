@@ -8,10 +8,19 @@
 .footerContent {
     text-align: center;
     display: grid;
-    grid-template-columns: auto auto auto;
 }
 
 .footerLink {
     color: white;
     text-decoration: none;
+}
+
+@media (min-width: 600px) {
+    .footerContent {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 600px) {
+    
 }

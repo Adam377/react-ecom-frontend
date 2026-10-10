@@ -18,6 +18,21 @@
     display: flex;
 }
 
-.right:last-child {
-    margin-left: auto;
+@media (max-width: 600px) {
+    .navBarContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right {
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 600px) {
+    .right:last-child {
+        margin-left: auto;
+    }
 }

@@ -5,5 +5,7 @@ Stuff to add:
     - Account info page;
 - Search bar functionality;
 - Cart item cart styling fix;
+- Modal when item is added to cart;
 - Footer pages;
-- Wishlist.
+- Wishlist;
+- Contact form.

@@ -18,13 +18,11 @@
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    padding: 15px 0px 15px 15px;
 }
 
 .highlightedProductDate {
     color: rgb(51, 51, 51);
     font-size: 20px;
-    padding-bottom: 10px;
 }
 
 .lastestProductImageTextContainer {
@@ -35,14 +33,8 @@
 .highlightedProductContent {
     margin-top: auto;
     margin-bottom: auto;
-    padding-left: 10px;
     text-align: left;
     font-size: 20px;
-    width: 50%;
-}
-
-.highlightedProductImage {
-    width: 50%;
 }
 
 .highlightedProductImage img {
@@ -74,4 +66,45 @@
     font-weight: bold;
     padding-bottom: 10px;
     text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+    .highlightedProductDate {
+        text-align: center;
+    }
+
+    .highlightedProductContent {
+        text-align: center;
+    }
+
+    .introContainer {
+        text-align: center;
+    }
+
+    .lastestProductImageTextContainer {
+        flex-direction: column;
+    }
+
+    .latestProductsTitle {
+        text-align: center;
+    }
+}
+
+@media (min-width: 600px) {
+    .highlightedProductContainer {
+        padding: 15px 0px 15px 15px;
+    }
+
+    .highlightedProductContent {
+        padding-left: 10px;
+        width: 50%;
+    }
+
+    .highlightedProductDate {
+        padding-bottom: 10px;
+    }
+
+    .highlightedProductImage {
+        width: 50%;
+    }
 }
