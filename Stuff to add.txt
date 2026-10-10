@@ -9,4 +9,5 @@ Stuff to add:
 - Footer pages;
 - Wishlist;
 - Contact form;
-- Add product categories.
+- Add product categories;
+- Stop user from adding product to cart twice.
