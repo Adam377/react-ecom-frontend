@@ -8,4 +8,5 @@ Stuff to add:
 - Modal when item is added to cart;
 - Footer pages;
 - Wishlist;
-- Contact form.
+- Contact form;
+- Add product categories.
