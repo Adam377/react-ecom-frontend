@@ -1,0 +1,9 @@
+Stuff to add:
+- User accounts;
+    - Login page;
+    - Downloads page;
+    - Account info page;
+- Search bar functionality;
+- Cart item cart styling fix;
+- Footer pages;
+- Wishlist.
